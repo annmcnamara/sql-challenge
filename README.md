@@ -30,7 +30,11 @@ In this assignment, you will design the tables to hold data in the CSVs, import 
 
 #### Data Modeling
 
-Inspect the CSVs and sketch out an ERD of the tables. Feel free to use a tool like [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
+First task was to inspect the CSVs and sketch out an ERD of the tables. 
+
+The following tool was used to create the ERD below [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
+
+![EmployeeDB_ERD.png](EmployeeDB_ERD.png)
 
 #### Data Engineering
 
