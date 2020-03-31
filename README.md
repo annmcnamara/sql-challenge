@@ -88,6 +88,7 @@ SQL code for the following queries are in in the file EmployeeSQL/employee.sql  
 1. List the following details of each employee: employee number, last name, first name, gender, and salary.
 
 ![1.png](images/1.png =100x20)
+![](./images/1.png =100x20)
 
 2. List employees who were hired in 1986.
 
