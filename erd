@@ -37,7 +37,7 @@ to_date DATE
 
 Titles
 -
-emp_no INT  PK FK >- Employee.emp_no
+emp_no INT FK >- Employee.emp_no
 title VARCHAR(50)
 from_date DATE
 to_date DATE
