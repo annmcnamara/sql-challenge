@@ -95,15 +95,15 @@ SQL code for the following queries are in in the file EmployeeSQL/employee.sql  
 
 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
 
-<img src="./images/3.png" alt="drawing" width="800"/>
+<img src="./images/3.png" alt="drawing" width="900"/>
 
 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
 
-<img src="./images/4.png" alt="drawing" width="500"/>
+<img src="./images/4.png" alt="drawing" width="600"/>
 
 5. List all employees whose first name is "Hercules" and last names begin with "B."
 
-<img src="./images/5.png" alt="drawing" width="500"/>
+<img src="./images/5.png" alt="drawing" width="800"/>
 
 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
 
