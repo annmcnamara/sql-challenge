@@ -65,7 +65,7 @@ CREATE TABLE Employee (
 ```
 
 ##### CONSTRAINTS
-The following constraints were aded to ensure _Referential Integrity_ of the Database. 
+The following constraints were aded to establish FOREIGN KEYS and _Referential Integrity_ of the Database. 
 ```sql
 ALTER TABLE DepartmentManager ADD CONSTRAINT fk_DepartmentManager_dept_no FOREIGN KEY(dept_no)
 REFERENCES Department (dept_no);
@@ -89,33 +89,25 @@ REFERENCES Employee (emp_no);
 Each CSV file was then imported into the corresponding SQL table to populate the tables. 
 
 #### 3. Data Analysis
+SQL code for the following queries are in queries.sql  - the first 5 records returned are shown here.  NOTE: Where appropriate the results were ordered. 
+
 
 1. List the following details of each employee: employee number, last name, first name, gender, and salary.
-
-
-
+![1.png](1.png)
 2. List employees who were hired in 1986.
-
-
-
+![2.png](2.png)
 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
-
-
-
+![3.png](3.png)
 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
-
-
-
+![4.png](4.png)
 5. List all employees whose first name is "Hercules" and last names begin with "B."
-
-
+![5.png](5.png)
 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
-
-
+![6.png](6.png)
 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
-
-
+![7.png](7.png)
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+![8.png](8.png)
 
 ## Bonus (Optional)
 The data appears artificial so the further analysis was necessary
@@ -153,19 +145,8 @@ Evidence in hand, you march into your boss's office and present the visualizatio
 
 Upon searching the employeed ID number 499942 it is revealed that the entire process was an *APRIL FOOLS* prank.
 
+![Images/9.png](8.png)
 
-
-## Submission
-
-* Create an image file of your ERD.
-
-* Create a `.sql` file of your table schemata.
-
-* Create a `.sql` file of your queries.
-
-* (Optional) Create a Jupyter Notebook of the bonus analysis.
-
-* Create and upload a repository with the above files to GitHub and post a link on BootCamp Spot.
 
 ### Copyright
 
