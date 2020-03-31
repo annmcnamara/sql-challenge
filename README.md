@@ -21,7 +21,7 @@ The following tool was used to create the ERD below [http://www.quickdatabasedia
 ![EmployeeDB_ERD.png](EmployeeDB_ERD.png)
 
 #### 2. Data Engineering
-A new table schema was created for each of the six CSV files. The following shows the SQL commands were used to specify data types, primary keys, foreign keys, and other constraints for *two tables* - the SQL commands to build all six tables can be found in the file _employee.sql_.
+A new table schema was created for each of the six CSV files. The following shows the SQL commands were used to specify data types, primary keys, foreign keys, and other constraints for *two tables* - the SQL commands to build all six tables can be found in the file _EmployeeSQL/employee.sql_.
 
 ##### DEPARTMENT TABLE
 ```sql
@@ -83,11 +83,11 @@ REFERENCES Employee (emp_no);
 Each CSV file was then imported into the corresponding SQL table to populate the tables. 
 
 #### 3. Data Analysis
-SQL code for the following queries are in in the file EmployeeSQL/queries.sql  - the first five records returned are shown here.  NOTE: Where appropriate the results were ordered. 
+SQL code for the following queries are in in the file EmployeeSQL/employee.sql  - the first five records returned are shown here.  NOTE: Where appropriate the results were ordered. 
 
 1. List the following details of each employee: employee number, last name, first name, gender, and salary.
 
-![1.png](images/1.png)<width="120" height="120">
+![1.png](images/1.png =100x20)
 
 2. List employees who were hired in 1986.
 
