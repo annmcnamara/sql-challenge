@@ -91,31 +91,31 @@ SQL code for the following queries are in in the file EmployeeSQL/employee.sql  
 
 2. List employees who were hired in 1986.
 
-<img src="./images/2.png" alt="drawing" width="700"/>
+<img src="./images/2.png" alt="drawing" width="500"/>
 
 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
 
-<img src="./images/3.png" alt="drawing" width="700"/>
+<img src="./images/3.png" alt="drawing" width="800"/>
 
 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
 
-![4.png](images/4.png)
+<img src="./images/4.png" alt="drawing" width="500"/>
 
 5. List all employees whose first name is "Hercules" and last names begin with "B."
 
-![5.png](images/5.png)
+<img src="./images/5.png" alt="drawing" width="500"/>
 
 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
 
-![6.png](images/6.png)
+<img src="./images/6.png" alt="drawing" width="800"/>
 
 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
-![7.png](images/7.png)
+<img src="./images/7.png" alt="drawing" width="800"/>
 
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
-![8.png](images/8.png)
+<img src="./images/8.png" alt="drawing" width="400"/>
 
 ## Bonus (Optional)
 The data appears artificial so the further analysis was necessary
