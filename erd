@@ -6,10 +6,11 @@ dept_name VARCHAR(100)
 
 DepartmentManager
 -
-dept_no VARCHAR(4)  FK - Department.dept_no
-emp_no INT FK - Employee.emp_no
+dept_no VARCHAR(4) PK FK >- Department.dept_no
+emp_no INT PK FK - Employee.emp_no
 from_date DATE
 to_date DATE
+
 
 Employee
 -
@@ -22,21 +23,21 @@ hire_date DATE
 
 DepartmentEmployee
 -
-emp_no INT  FK >- Employee.emp_no
-dept_no VARCHAR(4) FK >- Department.dept_no
+emp_no INT PK FK >- Employee.emp_no
+dept_no VARCHAR(4) PK FK >- Department.dept_no
 from_date DATE
 to_date DATE
 
 Salaries
 -
-emp_no INT  FK - Employee.emp_no
+emp_no INT  PK FK - Employee.emp_no
 salary INT
 from_date DATE
 to_date DATE
 
 Titles
 -
-emp_no INT  FK >- Employee.emp_no
+emp_no INT  PK FK >- Employee.emp_no
 title VARCHAR(50)
 from_date DATE
 to_date DATE
