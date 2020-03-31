@@ -26,7 +26,7 @@ The following tool was used to create the ERD below [http://www.quickdatabasedia
 
 
 #### 2. Data Engineering
-A new table schema was created for each of the six CSV files. The following shows the SQL commands were used to specify data types, primary keys, foreign keys, and other constraints for *two tables* - the rest of the code can be found in _employee.sql.
+A new table schema was created for each of the six CSV files. The following shows the SQL commands were used to specify data types, primary keys, foreign keys, and other constraints for *two tables* - the SQL commands to build all six tables can be found in the file _employee.sql_.
 
 
 ##### DEPARTMENT TABLE
