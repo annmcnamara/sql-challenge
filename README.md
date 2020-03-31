@@ -89,6 +89,7 @@ SQL code for the following queries are in in the file EmployeeSQL/employee.sql  
 
 ![1.png](images/1.png =100x20)
 ![](./images/1.png =100x20)
+<img src="./images/1.png" alt="drawing" width="200"/>
 
 2. List employees who were hired in 1986.
 
