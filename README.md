@@ -145,7 +145,7 @@ Evidence in hand, you march into your boss's office and present the visualizatio
 
 Upon searching the employeed ID number 499942 it is revealed that the entire process was an *APRIL FOOLS* prank.
 
-![Images/9.png](8.png)
+![images/9.png](8.png)
 
 
 ### Copyright
