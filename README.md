@@ -9,6 +9,12 @@ It is a beautiful spring day, and it is two weeks since you have been hired as a
 In this assignment, you will design the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. In other words, you will perform:
 
 1. Data Modeling
+## Assumptions regarding the data
+1. Each Employee has only one salary
+2. An employee can work across multiple deparments (e.g. Marketing and Sales)
+3. An employee can  have more than one title (e.g. CEO and VP of Research)
+4. An employee can only manage one department.
+
 
 2. Data Engineering
 
