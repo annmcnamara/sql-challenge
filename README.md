@@ -107,15 +107,15 @@ SQL code for the following queries are in in the file EmployeeSQL/employee.sql  
 
 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
 
-<img src="./images/6.png" alt="drawing" width="800"/>
+<img src="./images/6.png" alt="drawing" width="700"/>
 
 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
-<img src="./images/7.png" alt="drawing" width="800"/>
+<img src="./images/7.png" alt="drawing" width="700"/>
 
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
-<img src="./images/8.png" alt="drawing" width="400"/>
+<img src="./images/8.png" alt="drawing" width="300"/>
 
 ## Bonus (Optional)
 The data appears artificial so the further analysis was necessary
