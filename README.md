@@ -18,7 +18,7 @@ After inspecting the CSV Data the next task was to sketch out an ERD of the tabl
 
 The following tool was used to create the ERD below [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
 
-![EmployeeDB_ERD.png](EmployeeDB_ERD.png)
+![EmployeeDB_ERD.png](./images/EmployeeDB_ERD.png)
 
 #### 2. Data Engineering
 A new table schema was created for each of the six CSV files. The following shows the SQL commands were used to specify data types, primary keys, foreign keys, and other constraints for *two tables* - the SQL commands to build all six tables can be found in the file _EmployeeSQL/employee.sql_.
