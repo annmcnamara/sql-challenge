@@ -93,21 +93,21 @@ SQL code for the following queries are in queries.sql  - the first 5 records ret
 
 
 1. List the following details of each employee: employee number, last name, first name, gender, and salary.
-![1.png](1.png)
+![1.png](images/1.png)
 2. List employees who were hired in 1986.
-![2.png](2.png)
+![2.png](images/2.png)
 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
-![3.png](3.png)
+![3.png](images/3.png)
 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
-![4.png](4.png)
+![4.png](images/4.png)
 5. List all employees whose first name is "Hercules" and last names begin with "B."
-![5.png](5.png)
+![5.png](images/5.png)
 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
-![6.png](6.png)
+![6.png](images/6.png)
 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
-![7.png](7.png)
+![7.png](images/7.png)
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
-![8.png](8.png)
+![8.png](images/8.png)
 
 ## Bonus (Optional)
 The data appears artificial so the further analysis was necessary
@@ -125,7 +125,7 @@ The data appears artificial so the further analysis was necessary
 * If using a password, do not upload your password to your GitHub repository. See [https://www.youtube.com/watch?v=2uaTPmNvH0I](https://www.youtube.com/watch?v=2uaTPmNvH0I) and [https://martin-thoma.com/configuration-files-in-python/](https://martin-thoma.com/configuration-files-in-python/) for more information.
 
 2. Create a histogram to visualize the most common salary ranges for employees.
-![SalaryHistogram.png](SalaryHistogram.png)
+![SalaryHistogram.png](images/SalaryHistogram.png)
 
 #### ANALYSIS
 The histogram shows that the most common salary ranges are heavily skewed toward the lower range of salaries with most salaries falling below $50,000. 
@@ -133,7 +133,7 @@ The histogram shows that the most common salary ranges are heavily skewed toward
 3. Create a bar chart of average salary by title.
 
 ![SalaryByTitleDF.png](SalaryByTitleDF.png)
-![SaalaryByTitle.png](SalaryByTitle.png)
+![SaalaryByTitle.png](images/SalaryByTitle.png)
 
 #### ANALYSIS
 The seems to be some anomolies in the expected salaries.  Upon inpecting the graph it can be seen that 
