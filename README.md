@@ -1,14 +1,10 @@
 # SQL Homework - Employee Database: A Mystery in Two Parts
 
-![sql.png](sql.png)
-
 ## Background
-
-It is a beautiful spring day, and it is two weeks since you have been hired as a new data engineer at Pewlett Hackard. Your first major task is a research project on employees of the corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
-
-In this assignment, you will design the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. In other words, you will perform:
+This assignment designs the tables to hold data in six CSV files, imports the CSVs into a SQL database, and answer questions about the data.
 
 #### 1. Data Modeling
+##### Data Inspection
 After inspecting the CSV files and determining appropriate relationships bestween each of the six entities the following assumptions were made regarding the data. 
 ## Assumptions regarding the data
 1. Each Employee has only one salary.
@@ -17,17 +13,15 @@ After inspecting the CSV files and determining appropriate relationships bestwee
 3. An employee can have more than one title (e.g. CEO and VP of Research)
 4. An employee can only manage one department, but a department can have more than one manager. 
 
-
+##### Entity Relationship Diagram
 After inspecting the CSV Data the next task was to sketch out an ERD of the tables. 
 
 The following tool was used to create the ERD below [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
 
 ![EmployeeDB_ERD.png](EmployeeDB_ERD.png)
 
-
 #### 2. Data Engineering
 A new table schema was created for each of the six CSV files. The following shows the SQL commands were used to specify data types, primary keys, foreign keys, and other constraints for *two tables* - the SQL commands to build all six tables can be found in the file _employee.sql_.
-
 
 ##### DEPARTMENT TABLE
 ```sql
@@ -89,12 +83,11 @@ REFERENCES Employee (emp_no);
 Each CSV file was then imported into the corresponding SQL table to populate the tables. 
 
 #### 3. Data Analysis
-SQL code for the following queries are in queries.sql  - the first 5 records returned are shown here.  NOTE: Where appropriate the results were ordered. 
-
+SQL code for the following queries are in in the file EmployeeSQL/queries.sql  - the first five records returned are shown here.  NOTE: Where appropriate the results were ordered. 
 
 1. List the following details of each employee: employee number, last name, first name, gender, and salary.
 
-![1.png](images/1.png)
+![1.png](images/1.png)<width="120" height="120">
 
 2. List employees who were hired in 1986.
 
