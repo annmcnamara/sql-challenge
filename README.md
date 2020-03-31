@@ -87,15 +87,15 @@ SQL code for the following queries are in in the file EmployeeSQL/employee.sql  
 
 1. List the following details of each employee: employee number, last name, first name, gender, and salary.
 
-<img src="./images/1.png" alt="drawing" width="600"/>
+<img src="./images/1.png" alt="drawing" width="700"/>
 
 2. List employees who were hired in 1986.
 
-![2.png](images/2.png)
+<img src="./images/2.png" alt="drawing" width="700"/>
 
 3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name, and start and end employment dates.
 
-![3.png](images/3.png)
+<img src="./images/3.png" alt="drawing" width="700"/>
 
 4. List the department of each employee with the following information: employee number, last name, first name, and department name.
 
