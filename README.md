@@ -140,7 +140,7 @@ The histogram shows that the most common salary ranges are heavily skewed toward
 
 3. Create a bar chart of average salary by title.
 
-![SalaryByTitledf.png](SalaryByTitledf.png)
+![SalaryByTitledf.png](images/SalaryByTitledf.png)
 ![SalaryByTitle.png](images/SalaryByTitle.png)
 
 #### ANALYSIS
