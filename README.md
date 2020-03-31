@@ -28,11 +28,12 @@ The following tool was used to create the ERD below [http://www.quickdatabasedia
 #### 2. Data Engineering
 A new table schema was created for each of the six CSV files. The following shows the code used to specify data types, primary keys, foreign keys, and other constraints.
 
-```python
+```sql
 -- Department Table
 -- Contains Department Number, dept_no
 -- and Department Name, dept_name
 -- dept_no is Primary Key
+
 CREATE TABLE Department (
     dept_no VARCHAR(4)   NOT NULL,
     dept_name VARCHAR(100)   NOT NULL,
@@ -40,6 +41,7 @@ CREATE TABLE Department (
         dept_no
      )
 );
+   ```
 
 
 
