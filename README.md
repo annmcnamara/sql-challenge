@@ -133,17 +133,20 @@ The data appears artificial so the further analysis was necessary
 * If using a password, do not upload your password to your GitHub repository. See [https://www.youtube.com/watch?v=2uaTPmNvH0I](https://www.youtube.com/watch?v=2uaTPmNvH0I) and [https://martin-thoma.com/configuration-files-in-python/](https://martin-thoma.com/configuration-files-in-python/) for more information.
 
 2. Create a histogram to visualize the most common salary ranges for employees.
-![SalaryHistogram.png](./images/salaryRanges.png)
+##### HISTOGRAM SHOWING SALARY RANGES
 
-#### ANALYSIS
+<img src="./images/salaryRanges.png" alt="salran" width="700"/>
+
+##### SALARY RANGES ANALYSIS
 The histogram shows that the most common salary ranges are heavily skewed toward the lower range of salaries with most salaries falling below $50,000. 
 
-3. Create a bar chart of average salary by title.
-
 ![df.png](./images/df.png)
-![SalaryByTitle.png](./images/SalaryByTitle.png)
 
-#### ANALYSIS
+3. Create a bar chart of average salary by title.
+##### BAR CHART SHOWING SALARY BY TITLE 
+<img src="./images/SalaryByTitle.png" alt="salbyTitle" width="700"/>
+
+#### SALARY BY TITLE ANALYSIS
 The seems to be some anomolies in the expected salaries.  Upon inpecting the graph it can be seen that 
 
 
