@@ -26,10 +26,10 @@ The following tool was used to create the ERD below [http://www.quickdatabasedia
 
 
 #### 2. Data Engineering
-A new table schema was created for each of the six CSV files. The following shows the SQL commands were used to specify data types, primary keys, foreign keys, and other constraints.
+A new table schema was created for each of the six CSV files. The following shows the SQL commands were used to specify data types, primary keys, foreign keys, and other constraints for *two tables* - the rest of the code can be found in _employee.sql.
 
 
-##### DEPARTMENT
+##### DEPARTMENT TABLE
 ```sql
 -- Department Table
 -- Contains Department Number, dept_no
@@ -42,8 +42,27 @@ CREATE TABLE Department (
 );
 ```
 
-##### EMPLOYEE
-
+##### EMPLOYEE TABLE
+```sql
+-- DepartmentManager Table
+-- Contains Department Number, dept_no
+-- Employee Number, emp_no
+-- Employee birth date, birth_date
+-- Employee first name, first_name
+-- Employee last name, last_name
+-- Employee gender, gender
+-- Hire date, hire_date
+-- (emp_no)is Primary Key
+CREATE TABLE Employee (
+    emp_no INT   NOT NULL,
+    birth_date DATE   NOT NULL,
+    first_name VARCHAR   NOT NULL,
+    last_name VARCHAR   NOT NULL,
+    gender VARCHAR(1)   NOT NULL,
+    hire_date DATE   NOT NULL,
+    CONSTRAINT pk_Employee PRIMARY KEY (emp_no)
+);
+```
 
 
 
