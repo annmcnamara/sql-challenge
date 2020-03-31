@@ -133,15 +133,15 @@ The data appears artificial so the further analysis was necessary
 * If using a password, do not upload your password to your GitHub repository. See [https://www.youtube.com/watch?v=2uaTPmNvH0I](https://www.youtube.com/watch?v=2uaTPmNvH0I) and [https://martin-thoma.com/configuration-files-in-python/](https://martin-thoma.com/configuration-files-in-python/) for more information.
 
 2. Create a histogram to visualize the most common salary ranges for employees.
-![SalaryHistogram.png](images/salaryRanges.png)
+![SalaryHistogram.png](./images/salaryRanges.png)
 
 #### ANALYSIS
 The histogram shows that the most common salary ranges are heavily skewed toward the lower range of salaries with most salaries falling below $50,000. 
 
 3. Create a bar chart of average salary by title.
 
-![SalaryByTitledf.png](images/SalaryByTitledf.png)
-![SalaryByTitle.png](images/SalaryByTitle.png)
+![df.png](./images/df.png)
+![SalaryByTitle.png](./images/SalaryByTitle.png)
 
 #### ANALYSIS
 The seems to be some anomolies in the expected salaries.  Upon inpecting the graph it can be seen that 
@@ -153,6 +153,8 @@ Suspecting the data is artifical the visualization is presented to the boss, who
 Upon searching the employeed ID number 499942 it is revealed that the entire process was an *APRIL FOOLS* prank.  This explains the salary distribution. 
 
 ![images/9.png](images/9.png)
+
+![af.jpg](./images/af.jpg)
 
 
 ### Copyright
