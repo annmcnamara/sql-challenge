@@ -1,8 +1,4 @@
--- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- Link to schema: https://app.quickdatabasediagrams.com/#/d/0rM3e0
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
-
+-- Employee Database
 CREATE TABLE Department (
     dept_no VARCHAR(4)   NOT NULL,
     dept_name VARCHAR(100)   NOT NULL,
@@ -86,16 +82,29 @@ SELECT * FROM DepartmentEmployee;
 SELECT * FROM Titles;
 SELECT * FROM Salaries;
 
+--SELECT COUNT(emp_no) FROM salaries;
+--SELECT COUNT(emp_no) FROM employee;
+
 -- QUERIES
--- List the following details of each employee: employee number, last name, first name, gender, and salary.
-SELECT e.emp_no, e.last_name, e.first_name, s.salary
+-- List the following details of each employee: 
+-- employee number, last name, first name, gender, and salary.
+SELECT e.emp_no, e.last_name, e.first_name, e.gender, s.salary
 FROM employee e, salaries s
-WHERE s.emp_no = e.emp_no;
+WHERE s.emp_no = e.emp_no
+ORDER BY e.emp_no;
 
 -- List employees who were hired in 1986.
-SELECT first_name, last_name FROM employee WHERE hire_date >= '1986-01-01' and hire_date <= '1986-12-31';
+SELECT first_name, last_name, hire_date 
+FROM employee 
+WHERE hire_date >= '1986-01-01' AND hire_date <= '1986-12-31'
+ORDER BY hire_date;
 --SELECT * FROM employee;
-
+-- SELECT
+-- 	MIN(employee.hire_date) AS "MIN_HIRE_DATE",
+-- 	MAX(employee.hire_date) AS "MAX_HIRE_DATE"
+-- FROM employee
+-- WHERE employee.hire_date BETWEEN '1986-01-01' AND '1986-12-31'
+	
 -- List the manager of each department with the following information:
 --department number, department name,
 --the manager's employee number, last name, first name, and start and end employment dates.
@@ -104,25 +113,52 @@ FROM departmentmanager d, employee e, department dp
 where d.emp_no = e.emp_no and d.dept_no = dp.dept_no;
 -- SELECT * FROM DepartmentManager;
 -- SELECT * FROM employee;
+-- Count is 24 so gives confidence query is okay
+
 
 -- List the department of each employee with the following information:
 -- employee number, last name, first name, and department name.
 SELECT de.emp_no, e.last_name, e.first_name, d.dept_name
 FROM departmentemployee de, employee e, department d
-WHERE de.emp_no = e.emp_no AND de.dept_no = d.dept_no;
+WHERE de.emp_no = e.emp_no AND de.dept_no = d.dept_no
+ORDER BY e.emp_no;
+
+-- SELECT
+-- 	COUNT(employee.emp_no)
+-- FROM departmentemployee 
+-- JOIN department ON
+-- 	department.dept_no = DepartmentEmployee.dept_no
+-- JOIN employee ON
+-- 	employee.emp_no = departmentemployee.emp_no
+-- ;
 
 -- List all employees whose first name is "Hercules" and last names begin with "B."
+-- returns 20 rows 
+-- ordering by last_name gives us an ordered result
 SELECT *
 FROM employee
 WHERE first_name = 'Hercules'
 AND last_name LIKE 'B%'
+ORDER BY last_name;
 
--- List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
-SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
-FROM employee e, department d
+--List all employees in the Sales department, 
+--including their employee number, last name, first name, and department name.
+-- 52245 rows returned
+
+-- List all employees in the Sales and Development departments, 
+-- including their employee number, last name, first name, and department name.
+-- Sales - 52245
+-- Development - 85707
+-- Total -- 137952
+
+-- List all employees in the Sales and Development departments, 
+-- including their employee number, last name, first name, and department name.
+SELECT e.emp_no, e.last_name, e.first_name, d.dept_name, de.dept_no
+FROM employee e, department d, departmentemployee de
 WHERE d.dept_name = 'Sales' OR d.dept_name ='Development';
 
--- In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+-- In descending order, list the frequency count of employee last names, i.e., 
+-- how many employees share each last name.
 SELECT last_name,
 COUNT(last_name) AS "last_name_freq"
 FROM employee
@@ -130,4 +166,26 @@ GROUP BY last_name
 ORDER BY "last_name_freq" DESC;
 
 
+-- Epilog
+SELECT
+	employee.emp_no,
+	employee.first_name,
+	employee.last_name,
+	employee.hire_date,
+	salaries.salary,
+	salaries.from_date,
+	salaries.to_date,
+	titles.title
+FROM
+	employee
+JOIN
+	salaries
+ON
+	salaries.emp_no = employee.emp_no
+JOIN
+	titles
+ON
+	titles.emp_no = employee.emp_no
+WHERE	
+	employee.emp_no = 499942
 

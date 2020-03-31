@@ -8,49 +8,44 @@ It is a beautiful spring day, and it is two weeks since you have been hired as a
 
 In this assignment, you will design the tables to hold data in the CSVs, import the CSVs into a SQL database, and answer questions about the data. In other words, you will perform:
 
-1. Data Modeling
+#### 1. Data Modeling
+After inspecting the CSV files and determining appropriate relationships bestween each of the six entities the following assumptions were made regarding the data. 
 ## Assumptions regarding the data
-1. Each Employee has only one salary
-2. An employee can work across multiple deparments (e.g. Marketing and Sales)
-3. An employee can  have more than one title (e.g. CEO and VP of Research)
-4. An employee can only manage one department.
+1. Each Employee has only one salary.
+- As the number of rows is the same in both of these CSV files and using a general rule of thumb it is reasonable to conclude each employee has only one salary.
+2. An employee can work across multiple Departments (e.g. Marketing and Sales)
+3. An employee can have more than one title (e.g. CEO and VP of Research)
+4. An employee can only manage one department, but a department can have more than one manager. 
 
 
-2. Data Engineering
-
-3. Data Analysis
-
-### Before You Begin
-
-1. Create a new repository for this project called `sql-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Inside your local git repository, create a directory for the SQL challenge. Use a folder name to correspond to the challenge: **EmployeeSQL**.
-
-4. Add your files to this folder.
-
-5. Push the above changes to GitHub.
-
-## Instructions
-
-#### Data Modeling
-
-First task was to inspect the CSVs and sketch out an ERD of the tables. 
+After inspecting the CSV Data the next task was to sketch out an ERD of the tables. 
 
 The following tool was used to create the ERD below [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com).
 
 ![EmployeeDB_ERD.png](EmployeeDB_ERD.png)
 
-#### Data Engineering
 
-* Use the information you have to create a table schema for each of the six CSV files. Remember to specify data types, primary keys, foreign keys, and other constraints.
+#### 2. Data Engineering
+A new table schema was created for each of the six CSV files. The following shows the code used to specify data types, primary keys, foreign keys, and other constraints.
 
-* Import each CSV file into the corresponding SQL table.
+```python
+-- Department Table
+-- Contains Department Number, dept_no
+-- and Department Name, dept_name
+-- dept_no is Primary Key
+CREATE TABLE Department (
+    dept_no VARCHAR(4)   NOT NULL,
+    dept_name VARCHAR(100)   NOT NULL,
+    CONSTRAINT pk_Department PRIMARY KEY (
+        dept_no
+     )
+);
 
-#### Data Analysis
 
-Once you have a complete database, do the following:
+
+Each CSV file was then imported into the corresponding SQL table to populate the tables. 
+
+#### 3. Data Analysis
 
 1. List the following details of each employee: employee number, last name, first name, gender, and salary.
 
@@ -106,4 +101,4 @@ Evidence in hand, you march into your boss's office and present the visualizatio
 
 ### Copyright
 
-Trilogy Education Services © 2019. All Rights Reserved.
+Ann McNamara © 2020. All Rights Reserved.
