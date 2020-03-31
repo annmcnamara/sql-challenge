@@ -140,10 +140,9 @@ The seems to be some anomolies in the expected salaries.  Upon inpecting the gra
 
 
 ## Epilogue
+Suspecting the data is artifical the visualization is presented to the boss, who tells you to search your ID number (49942) 
 
-Evidence in hand, you march into your boss's office and present the visualization. With a sly grin, your boss thanks you for your work. On your way out of the office, you hear the words, "Search your ID number." You look down at your badge to see that your employee ID number is 499942.
-
-Upon searching the employeed ID number 499942 it is revealed that the entire process was an *APRIL FOOLS* prank.
+Upon searching the employeed ID number 499942 it is revealed that the entire process was an *APRIL FOOLS* prank.  This explains the salary distribution. 
 
 ![images/9.png](images/9.png)
 
