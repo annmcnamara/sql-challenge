@@ -1,5 +1,13 @@
 # SQL Homework - Employee Database: A Mystery in Two Parts
 
+## Directory Structure
+- EmployeeDB_ERD.png -- The Entity Relationship Diagram (ERD)
+- erd.txt -- The text file to build the ERD 
+- EmployeeSQL -- A directory containting the sql files and data to populate the DB
+- connectingtoDB.ipynb --A jupyter notebook containing connection to the database and commands to query the DB and create plots
+- images -- A directory containing images used in README.md
+- README.md --this file
+
 ## Background
 This assignment designs the tables to hold data in six CSV files, imports the CSVs into a SQL database, and answer questions about the data.
 
@@ -122,15 +130,11 @@ The data appears artificial so the further analysis was necessary
 
 1. The SQL database was imported the into Pandas using SQLAlchemy to create and connect an engine. 
 
-
    ```sql
    from sqlalchemy import create_engine
    engine = create_engine('postgresql://localhost:5432/<your_db_name>')
    connection = engine.connect()
    ```
-
-
-* If using a password, do not upload your password to your GitHub repository. See [https://www.youtube.com/watch?v=2uaTPmNvH0I](https://www.youtube.com/watch?v=2uaTPmNvH0I) and [https://martin-thoma.com/configuration-files-in-python/](https://martin-thoma.com/configuration-files-in-python/) for more information.
 
 2. Create a histogram to visualize the most common salary ranges for employees.
 ##### HISTOGRAM SHOWING SALARY RANGES
@@ -138,17 +142,34 @@ The data appears artificial so the further analysis was necessary
 <img src="./images/salaryRanges.png" alt="salran" width="700"/>
 
 ##### SALARY RANGES ANALYSIS
-The histogram shows that the most common salary ranges are heavily skewed toward the lower range of salaries with most salaries falling below $50,000. 
+The seems to be some anomolies in the expected salaries.  Upon inpecting the graph it can be seen that 
+salaries are very heavily skewed to the lower end of the salary range
+- This is especially concerning as engineers (of all ranks) comprise 50% of the total employees
+- A very small proportion, less than 2% of all employees earn in excess of 95K USD
+- Most employees earn in the range of 40K to 55K (approximately 61%) with even more in the 40K to 75K range (approximately 75%) 
+- In general one would expect this curve to have a normal distriubtion with very few employees on the very lower range of the scale and very few on the very upper range of the scale and most of the employees in the middle.  This data is definitley skewed to the lower range of the data scale. 
 
-![df.png](./images/df.png)
 
 3. Create a bar chart of average salary by title.
 ##### BAR CHART SHOWING SALARY BY TITLE 
 <img src="./images/SalaryByTitle.png" alt="salbyTitle" width="800"/>
 
 #### SALARY BY TITLE ANALYSIS
-The seems to be some anomolies in the expected salaries.  Upon inpecting the graph it can be seen that 
+There appears to be something awry with this data - it is peculiar that
 
+1. Engineers are paid less than staff
+2. Managers are paid less than staff
+3. There is little to no difference between the salaries of an Engineer regardles of rank
+- A Senior Engineer, Engineer and Assistant Engineer are all paid approximately the same salary
+4 Even on the staff end Senior Staff and Staff average the same salary (almost exactly the same average)
+6. Technique leaders make less than regular staff
+
+![df.png](./images/df.png)
+
+A careful count of employees against titles shows that almost 50% of employees have more than one title (see image below). Upon further inspection the titles table is populated with many duplicates - it is apparent that as an employee changes title the database entry with their former title persists in the database. This could be why the data appears to be skewed and salaries are unevenly distributed, however the salary information remains the same as even that their former title that is the salary they earned. So there is still much disparity among salaries, and the data may be outdated.  It also indicates that there is no significant increase in pay (pay raise) with advancement to a higher level within the same title.
+
+
+![percent.png](./images/percent.png)
 
 ## Epilogue
 Suspecting the data is artifical the visualization is presented to the boss, who tells you to search your ID number (49942) 
