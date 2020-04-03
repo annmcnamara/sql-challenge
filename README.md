@@ -15,7 +15,7 @@ This assignment designs the tables to hold data in six CSV files, imports the CS
 ##### Data Inspection
 After inspecting the CSV files and determining appropriate relationships bestween each of the six entities the following assumptions were made regarding the data. 
 ## Assumptions regarding the data
-1. Each Employee has only one salary.
+1. Each Employee has one and only one salary.
 - As the number of rows is the same in both of these CSV files and using a general rule of thumb it is reasonable to conclude each employee has only one salary.
 2. An employee can work across multiple Departments (e.g. Marketing and Sales)
 3. An employee can have more than one title (e.g. CEO and VP of Research)
